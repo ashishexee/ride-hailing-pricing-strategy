@@ -1,0 +1,146 @@
+Dynamic Pricing Strategy in Ride-Hailing: A Growth vs
+Retention Decision Case
+Background
+A leading ride-hailing platform operating across Mumbai, Bangalore, and Delhi is facing a
+strategic pricing inflection point. Over the last two quarters, dynamic surge pricing has
+contributed to a 9% increase in topline revenue. However, the same period has seen a 14%
+decline in customer satisfaction, higher cancellation rates, and early indications of customer
+churn.
+With a Series D fundraise planned within the next 18 months, leadership must demonstrate not
+just revenue growth, but sustainable unit economics, customer retention, and long-term
+business quality. The executive team has engaged the strategy and analytics function to assess
+whether the current pricing model is maximizing enterprise value—or creating hidden structural
+risk.
+As part of the strategy and analytics team, your mandate is to diagnose the pricing problem and
+recommend a commercially viable pricing strategy.
+Dataset
+The analysis will be conducted using a purpose-built trip-level dataset representing ride-hailing
+activity across Mumbai, Bangalore, and Delhi over a full calendar year (50,000 records).
+Available data includes:
+Operational Data: trip timestamps, route information, city, zone type, distance, ride completion
+status, surge multiplier, fare
+Customer Data: customer segment, loyalty tier, days since last ride, churn risk indicators,
+satisfaction scores
+Financial Data: driver payout, platform revenue, take rate, trip costs, contribution margin, CAC
+External Variables: weather conditions including precipitation, visibility, humidity, and
+temperature
+The dataset requires preprocessing, cleaning, and feature engineering before analysis.
+Core Business Question
+What pricing strategy maximizes long-term enterprise value while balancing revenue
+growth, contribution profitability, customer retention, and competitive positioning?
+Specifically, you must determine the surge pricing thresholds at which incremental revenue
+gains begin to erode customer trust, retention, and long-term economic value.
+Workstream 1 — Demand Suppression and Customer Response Analysis
+Identify the city, zone, and time-window combinations where surge pricing is associated
+with measurable deterioration in customer behavior.
+This includes:
+● increased cancellations
+● reduced ride completion rates
+● worsening satisfaction scores
+● elevated churn indicators
+The analysis should distinguish normal demand fluctuations from pricing-driven
+behavioral deterioration using comparable baseline conditions.
+Workstream 2 — Demand Sensitivity and Pricing Elasticity Assessment
+Estimate demand sensitivity to fare increases across customer segments, zone types, and
+operating conditions.
+Specifically, assess how ride demand responds to surge-driven fare increases across:
+● residential, commercial, and transit zones
+● peak vs off-peak periods
+● weekday vs weekend conditions
+Where relevant, control for observable external factors such as weather conditions.
+All assumptions, methodology, and limitations must be clearly stated.
+Workstream 3 — Unit Economics and Customer Lifetime Value Stress Test
+Assess whether surge pricing improves contribution profitability after accounting for customer
+attrition risk.
+The analysis should:
+● compare contribution margins across surge bands
+● assess CAC sensitivity under rising churn
+● estimate breakeven churn thresholds
+● evaluate LTV/CAC implications under alternative pricing assumptions
+The objective is to determine whether surge pricing creates economically durable growth—or
+short-term revenue inflation.
+Workstream 4 — Pricing Strategy Scenario Simulation
+Develop scenario-based pricing simulations to evaluate the commercial impact of alternative
+surge pricing policies.
+Simulations should assess:
+● ride demand impact
+● revenue outcomes
+● contribution margin outcomes
+● retention risk indicators
+The objective is to identify commercially viable pricing thresholds by segment, balancing
+profitability with customer sustainability.
+Strategic Decision Context
+The final recommendation should reflect executive decision-making standards. Analytical
+outputs must be translated into commercially actionable strategy that can withstand scrutiny
+from leadership, investors, and competitive market dynamics.
+Competitive market assessment:
+Assess the competitive structure of the Indian ride-hailing market and evaluate how competitors
+may respond to alternative pricing strategies.
+Consider:
+● competitive rivalry
+● customer switching behavior
+● substitute transport options
+● pricing defensibility
+Strategic Options:
+You must evaluate the following strategic pathways and recommend the most commercially
+viable option.
+Each option should be assessed across:
+● projected revenue impact
+● contribution margin implications
+● customer retention and satisfaction risk
+● competitive response likelihood
+● implementation complexity
+● investor attractiveness
+Three strategic options to evaluate:
+Option 1 — Calibrated Optimization of Existing Dynamic Pricing
+Maintain the current surge pricing framework with moderate calibration adjustments to reduce
+excessive pricing volatility.
+Option 2 — Segmented Surge Governance by Zone Type
+Introduce differentiated surge caps across residential, commercial, and transit-heavy zones.
+Option 3 — Retention-Focused Pricing Protection for High-Value Riders
+Introduce loyalty-based surge protection for high-frequency and high-value customer segments.
+Deliverables
+1. Data Analysis Demand patterns by zone, time segment, fare level, weather condition, and
+surge multiplier built in Python or SQL. Findings must be supported with charts or summary
+tables and accompanied by business interpretation, not just output.
+2. Elasticity Summary A structured analysis of fare versus demand trends across zone types
+and time segments. Methodology, assumptions, and limitations must be explicitly stated
+alongside the estimates.
+3. Unit Economics Workbook An Excel workbook covering contribution margin per trip by
+surge level, a simplified LTV/CAC analysis, churn sensitivity analysis, and the breakeven churn
+rate calculation.
+4. Revenue and Margin Simulation An Excel simulation showing ride demand, revenue, and
+contribution margin outcomes under multiple surge pricing scenarios across at least two zone
+types.
+5. Strategy Deck A consulting-style presentation covering the Porter's Five Forces analysis, a
+comparison of the three strategic options, the investor and financial narrative, a final
+recommendation, and proposed implementation considerations.
+(The strategy deck must not exceed 10 slides excluding appendix. The recommended structure
+is:
+1. Situation Summary — the business problem and highest-level findings in 3 lines
+2. Porter's Five Forces — India-specific, one insight per force
+3. Key Analytical Findings — 3 to 4 numbers from the other deliverables that the
+recommendation rests on
+4. Strategic Options Comparison — 3 strategic options across 4 evaluation dimensions
+in a table
+5. Recommendation — what, where, why, with numbers
+6. Investor and Financial Narrative — three metrics, three directional statements,
+18-month horizon
+7. Implementation Considerations — what needs to happen, key risks, mitigations
+8. Appendix — supporting visuals and references)
+Evaluation Criteria
+Submissions will be assessed on:
+Analytical Rigor & Data Interpretation 30%
+Financial Reasoning & Unit Economics 25%
+Strategic Commercial Judgement 20%
+Feasibility & Implementation Practicality 15%
+Executive Communication & Storytelling 10%
+Individual Participation Requirement
+This is an individual submission. All analysis, modeling, assumptions, simulations, strategic
+recommendations, and presentation materials must be independently developed by the
+participant.
+Use of external references for industry understanding and conceptual research is permitted.
+However, direct replication of existing analyses, models, or presentation content is not allowed.
+Participants are expected to clearly document assumptions, methodology,references and
+business reasoning throughout the submission.
+Dataset link- Consult & Analytics

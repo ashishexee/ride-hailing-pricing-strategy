@@ -1,0 +1,31 @@
+weight_scenario,option,weighted_score
+Base,Zone Governance (1.75/2.0/2.5x),4.46
+Base,Combined: Zone caps + Soft loyalty (1.75x),4.32
+Base,Loyalty Soft (1.75x for Gold/Silver),3.6
+Base,Loyalty Hard (1.5x for Gold/Silver),3.27
+Base,Calibrated Surge (2.0x),3.02
+CM_Heavy,Zone Governance (1.75/2.0/2.5x),4.3
+CM_Heavy,Combined: Zone caps + Soft loyalty (1.75x),4.11
+CM_Heavy,Loyalty Soft (1.75x for Gold/Silver),3.61
+CM_Heavy,Loyalty Hard (1.5x for Gold/Silver),3.15
+CM_Heavy,Calibrated Surge (2.0x),2.91
+Churn_Heavy,Zone Governance (1.75/2.0/2.5x),4.6
+Churn_Heavy,Combined: Zone caps + Soft loyalty (1.75x),4.45
+Churn_Heavy,Loyalty Soft (1.75x for Gold/Silver),3.62
+Churn_Heavy,Loyalty Hard (1.5x for Gold/Silver),3.42
+Churn_Heavy,Calibrated Surge (2.0x),3.21
+Reg_Heavy,Zone Governance (1.75/2.0/2.5x),4.56
+Reg_Heavy,Combined: Zone caps + Soft loyalty (1.75x),4.44
+Reg_Heavy,Loyalty Soft (1.75x for Gold/Silver),3.48
+Reg_Heavy,Loyalty Hard (1.5x for Gold/Silver),3.16
+Reg_Heavy,Calibrated Surge (2.0x),2.81
+Strat_Heavy,Zone Governance (1.75/2.0/2.5x),4.66
+Strat_Heavy,Combined: Zone caps + Soft loyalty (1.75x),4.55
+Strat_Heavy,Loyalty Soft (1.75x for Gold/Silver),3.39
+Strat_Heavy,Loyalty Hard (1.5x for Gold/Silver),3.17
+Strat_Heavy,Calibrated Surge (2.0x),2.66
+Equal,Zone Governance (1.75/2.0/2.5x),4.36
+Equal,Combined: Zone caps + Soft loyalty (1.75x),4.24
+Equal,Loyalty Soft (1.75x for Gold/Silver),3.73
+Equal,Loyalty Hard (1.5x for Gold/Silver),3.35
+Equal,Calibrated Surge (2.0x),3.2

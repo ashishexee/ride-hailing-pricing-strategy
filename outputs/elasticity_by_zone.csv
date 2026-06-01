@@ -1,0 +1,16 @@
+zone_type,surge_band,arc_elasticity,n_trips
+commercial,1.25x,0.277,1136
+commercial,1.5x,0.349,1196
+commercial,1.75x,0.239,1168
+commercial,2.0x,0.387,1049
+commercial,2.5x,0.327,2344
+residential,1.25x,0.262,999
+residential,1.5x,0.39,1000
+residential,1.75x,0.223,992
+residential,2.0x,0.447,1024
+residential,2.5x,0.322,1978
+transit_hub,1.25x,0.389,438
+transit_hub,1.5x,0.344,469
+transit_hub,1.75x,0.247,470
+transit_hub,2.0x,0.401,469
+transit_hub,2.5x,0.34,887

@@ -1,0 +1,7 @@
+scenario,label,cm_change_pct,rev_change_pct,completion_change_pct,cancel_change_pp,satisfaction_change,trips_capped_pct,n_customers_improved,pct_customers_improved,avg_churn_delta_pp,monthly_cm_delta,annual_cm_delta,ltv_retention_gain,net_annual_value,total_ltv_gain,baseline_assumption
+S0_Status_Quo,Status Quo,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0,0,0,0,97% (adjusted)
+S1_Calibrated,Calibrated Surge (2.0x),-5.89,-2.2,-0.36,0.05,0.048,10.4,310,10.3,0.53,-40088,-481054,1753,-479301,1753,97% (adjusted)
+S2b_Zone_Moderate,Zone Governance (1.75/2.0/2.5x),-6.06,-1.79,0.25,-0.57,0.061,10.7,367,12.2,0.64,-41212,-494546,2131,-492415,2131,97% (adjusted)
+S3a_Loyalty_Hard,Loyalty Hard (1.5x for Gold/Silver),-5.24,-1.54,0.22,-0.41,0.044,6.2,308,10.3,0.46,-35648,-427776,1503,-426273,1503,97% (adjusted)
+S3b_Loyalty_Soft,Loyalty Soft (1.75x for Gold/Silver),-2.55,-0.58,0.32,-0.46,0.026,4.7,166,5.5,0.25,-17380,-208564,861,-207704,861,97% (adjusted)
+S4b_Combined_Soft,Combined: Zone caps + Soft loyalty (1.75x),-6.92,-1.9,0.48,-0.84,0.072,12.1,433,14.4,0.74,-47073,-564875,2534,-562340,2534,97% (adjusted)

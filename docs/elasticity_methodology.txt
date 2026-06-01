@@ -1,0 +1,34 @@
+
+ELASTICITY METHODOLOGY
+======================
+
+Method: Arc Elasticity of Completion Rate with respect to Fare per km
+Formula: e = (Q1-Q2)/(Q1+Q2) / (P1-P2)/(P1+P2)
+Where Q = completion rate, P = average fare_per_km
+
+Baseline: 1.0x surge (100% completion rate, baseline fare_per_km)
+
+ASSUMPTIONS:
+1. 1.0x surge represents "normal" baseline behavior (no pricing pressure)
+2. Completion rate is a valid proxy for demand (captures intensive margin)
+3. Surge multiplier is partially exogenous after controlling for zone and time fixed effects
+4. Elasticity is locally constant within each surge band
+5. Weather effects are separable from price effects (controls applied)
+
+LIMITATIONS:
+1. ENDOGENEITY: Surge activates during high demand → OLS/arc estimates biased toward zero (attenuation bias) → our estimates are LOWER BOUNDS on true elasticity
+2. INTENSIVE MARGIN ONLY: We only observe trips that were requested. People who saw surge and didn't open the app (extensive margin) are invisible → true demand suppression is higher
+3. NO VALID INSTRUMENT: Surge-as-IV is circular (surge IS the price). Zone×hour FE is the best feasible identification with this data.
+4. 100% COMPLETION AT 1.0x: This is likely a data artifact that makes the baseline non-comparable to surged trips. Arc elasticity from 100% to 96% may overstate the change.
+5. CROSS-SECTIONAL: Cannot establish causation — only conditional correlations
+6. SAMPLE SIZE: Some segment×surge cells have <100 observations — results should be interpreted directionally
+
+
+
+WEATHER CONFOUNDING ASSESSMENT (Round 5):
+Tested precipitation as potential confounder (correlates with both surge activation and completion).
+Results: precip-surge correlation = -0.0041, precip-completion correlation = 0.0021.
+Both are effectively zero. Weather-stratified elasticity differs by <5% from unadjusted.
+VERDICT: Weather confounding is NEGLIGIBLE in this dataset. Unadjusted elasticity (0.22 at 97% baseline)
+is reliable. The earlier claim (R4) of '10-15% lower true elasticity' was based on assumption, not data.
+This is actually GOOD for the recommendation: it means our conservative elasticity estimate is accurate.
