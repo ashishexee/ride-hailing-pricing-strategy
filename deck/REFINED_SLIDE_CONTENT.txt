@@ -1,0 +1,442 @@
+COMPLETE 8-SLIDE CONTENT — RIDE-HAILING DYNAMIC PRICING STRATEGY
+================================================================
+
+CRITICAL RULES (READ AND OBEY EVERY SINGLE ONE):
+1. Every slide must be DENSE with information. Academic competition deck. Show ALL work.
+2. No vague references. Every claim backed by a number from the dataset (50K trips, 3,000 customers, 3 cities).
+3. Use exact chart filenames from `charts/` directory. These PNG files exist and must be referenced by name.
+4. Every chart placed MUST be an actual file from the charts/ directory. Do NOT reference charts that don't exist.
+5. No causal claims — all simulation results are projection-based with documented assumptions.
+6. Churn model confidence is MEDIUM-LOW (industry benchmarks, NOT validated in this dataset). Always state this caveat.
+7. ABSOLUTELY NO MARKDOWN SYMBOLS in slide text. No # for headings. No * or ** for emphasis. Plain text only.
+
+================================================================
+SLIDE 1 — SITUATION SUMMARY / COVER
+================================================================
+
+LAYOUT: Asymmetric Swiss/Bauhaus cover design. White background with grid. Massive headline dominating 40% of slide area. Three metric badges as sticker-style boxes. Key chart as hero image on right side.
+
+--- TOP-RIGHT ---
+SLIDE NUMBER: small, subtle gray text "1/8"
+
+--- TITLE (left 60%, massive, asymmetric placement) ---
+MAIN TITLE: "Surge Pricing"
+Font: Ultra-bold modern serif (Didot/Bodoni), 68pt equivalent, jet black (#111111)
+Position: 0.7 inch from left, 0.8 inches from top
+
+SUBTITLE LINE 1: "The Revenue Engine That's"
+Font: Regular, 28pt, charcoal (#333333)
+
+SUBTITLE LINE 2: "Destroying Retention"
+Font: Bold Italic, 28pt, alert red (#FF3333)
+
+--- DIVIDER ---
+Electric yellow (#FFCC00) line, 3pt, 5.5 inches wide, 0.15 inch below subtitle
+
+--- HOOK LINE ---
+"62.8% of contribution margin comes from 31.2% of trips — but at what cost to long-term enterprise value?"
+Font: Italic, 14pt, gray (#7F8C8D)
+Width: 6 inches
+
+--- KEY STATS (below hook, three stacked, sticker-style) ---
+Stat 1:
+  Value: "62.8%" — Bold, 28pt, electric yellow (#FFCC00)
+  Label: "CM from surge trips" — Regular, 11pt, gray
+  Sub: "(vs 37.2% from 68.8% of non-surge volume)" — Italic, 9pt, gray
+  Border: 2pt solid #FFCC00, slight rotation 2deg
+
+Stat 2:
+  Value: "39.6%" — Bold, 28pt, alert red (#FF3333)
+  Label: "Trips with negative CM" — Regular, 11pt, gray
+  Sub: "(99% of <3km trips at 1.0x, NOT loss-leaders)" — Italic, 9pt, gray
+  Border: 2pt solid #FFCC00, slight rotation -2deg
+
+Stat 3:
+  Value: "4.14 → 2.36" — Bold, 28pt, electric yellow (#FFCC00)
+  Label: "Satisfaction collapse (1.0x → 2.5x surge)" — Regular, 11pt, gray
+  Sub: "(Transition at ~1.5x surge multiplier)" — Italic, 9pt, gray
+  Border: 2pt solid #FFCC00, slight rotation 1deg
+
+--- RIGHT SIDE (hero chart) ---
+IMAGE: charts/satisfaction_vs_surge.png
+Display: 5.5 inches wide x 4 inches tall, right side of slide
+Frame: Geometric mask, NOT plain rectangle. Electric yellow border accent.
+Position: 6.5 inches from left, 1.5 inches from top
+
+--- BOTTOM STRIP ---
+"Dynamic Pricing Strategy in Ride-Hailing | 50,000 Trips | 3,000 Customers | Mumbai, Bangalore, Delhi"
+Font: Regular, 10pt, gray, centered
+Position: Full width strip, 0.4 inch from bottom, 0.6 inch tall
+
+================================================================
+SLIDE 2 — PORTER'S FIVE FORCES
+================================================================
+
+LAYOUT: Left half: Porter's framework as a radial/table. Right half: pricing defensibility matrix + competitive response scenarios. Dense but scannable. White with grid. Analysis/dissection pattern.
+
+--- TOP ---
+SLIDE TITLE: "Porter's Five Forces" — Bold, 44pt, jet black
+SUBTITLE: "Indian Ride-Hailing Market Structure & Pricing Defensibility" — Italic, 14pt, gray
+SLIDE NUMBER: "2/8" — top-right
+
+--- LEFT HALF (55%) ---
+IMAGE: charts/porters_five_forces.png
+Display: 6 inches wide x 4 inches tall
+Frame: Geometric mask, electric yellow border
+Position: 0.5 inch from left, 1.8 inches from top
+
+FORCE DETAILS (as compact text boxes below image):
+Force 1: "Buyer Power: HIGH — 75%+ riders have 2+ apps. Zero switching cost. Price comparison in seconds."
+Force 2: "Supplier Power: MODERATE — Drivers multi-home but platform-dependent. Earnings sensitivity to caps is the #1 implementation risk."
+Force 3: "Rivalry: HIGH — Ola, Uber, Rapido. Winner-take-most per city. Margin pressure from discounting."
+Force 4: "Substitutes: VERY HIGH — Metro, autos, buses, walking <3km. Short-distance trips especially substitutable."
+Force 5: "New Entrants: MODERATE — Network effects barrier. Zero-surge positioning attracts switchers but burns cash."
+
+Font: Regular, 10pt, charcoal. Each force name in Bold, electric yellow highlight on key words.
+
+--- RIGHT HALF (40%) ---
+IMAGE: charts/porters_defensibility.png
+Display: 4.5 inches wide x 2.5 inches tall
+Frame: Sticker-style with slight rotation
+Position: Right side, top portion
+
+DEFENSIBILITY TABLE (below image):
+| Strategy | Defensibility | Key Reason |
+| Uniform Cap (2.0x) | LOW | Observable. Competitor matches in hours. |
+| Zone Governance | HIGH | Caps invisible until ride request. Impossible to reverse-engineer per-zone thresholds. |
+| Loyalty Protection | MEDIUM | Tier-based. 37.1% Unknown tier unprotected. Hard to communicate value. |
+
+Font: Regular, 10pt, charcoal. Table borders: 1pt electric yellow.
+
+--- BOTTOM ---
+KEY INSIGHT BOX (sticker-style, electric yellow border, slight rotation):
+"Zone-based caps are the ONLY strategy with HIGH defensibility. Competitors cannot observe or replicate zone-specific cap thresholds because they vary by rider context (origin, destination, time, demand pattern). Uniform caps are immediately observable and matchable."
+Font: Bold, 11pt, charcoal. Key phrase "HIGH defensibility" highlighted electric yellow.
+
+================================================================
+SLIDE 3 — KEY ANALYTICAL FINDINGS
+================================================================
+
+LAYOUT: Grid of findings. Top section: two large charts side by side. Bottom section: 4 findings boxes with numbers. Data/infographic pattern. High density.
+
+--- TOP ---
+SLIDE TITLE: "Key Analytical Findings" — Bold, 44pt, jet black
+SUBTITLE: "50,000 trip-level records analyzed across 4 workstreams" — Italic, 14pt, gray
+SLIDE NUMBER: "3/8"
+
+--- UPPER LEFT ---
+IMAGE: charts/completion_cancel_by_surge.png
+Display: 5.5 inches wide x 2.5 inches tall
+Frame: Geometric mask, electric yellow border
+
+--- UPPER RIGHT ---
+IMAGE: charts/ltv_cac_by_segment.png
+Display: 5.5 inches wide x 2.5 inches tall
+Frame: Geometric mask, electric yellow border
+
+--- BELOW CHARTS (four finding boxes, 2x2 grid) ---
+BOX 1 — "Demand Suppression (WS1)":
+  Text: "Satisfaction drops from 4.14 at 1.0x to 2.36 at 2.5x surge — a 43% decline. Transition point at ~1.5x. Cancellation rises from 0% to 18% over the same range. Completion at 1.0x shows 100% data artifact (adjusted to 97% baseline for all analysis). Zone heterogeneity matters: residential zones show steeper satisfaction decline (4.18→2.34) than transit hubs (4.11→2.38). City-level breakdown: Mumbai vs Bangalore vs Delhi exhibit similar deterioration patterns."
+  Font: Regular, 10pt, charcoal. Key numbers highlighted electric yellow.
+  Border: 1pt solid electric yellow. Padding: 0.12 inch.
+
+BOX 2 — "Price Elasticity (WS2)":
+  Text: "Arc elasticity averaged across surge bands: 0.22 (inelastic) at 97% baseline completion. Demand is INELASTIC — a 10% price increase causes only 2.2% demand loss. By zone: residential |e|=0.54, commercial |e|=0.67, transit_hub |e|=0.42 (all inelastic). By time: Peak |e|=0.83, Off-Peak |e|=0.56. Weekday |e|<Weekend |e|. Raw arc elasticity is confounded by temporal/zone shifts; validated value (0.22) from controlled regression with time-of-day, zone, and weather fixed effects. Weather confounding is NEGLIGIBLE (precip-surge correlation = -0.004)."
+  Font: Regular, 10pt, charcoal.
+  Border: 1pt solid electric yellow. Padding: 0.12 inch.
+
+BOX 3 — "Unit Economics (WS3)":
+  Text: "LTV/CAC by Segment: Frequent 1.47x (above breakeven), Occasional 0.70x (below), Rare 0.22x (severely below). DCF LTV: 18-month horizon, 10% annual discount rate. Monthly churn: 12.3-12.8% across segments (derived from satisfaction via industry benchmarks). Breakeven churn thresholds: Frequent = 18.7%, Occasional = 7.5%, Rare = 2.2% (current churn already exceeds breakeven for Occasional/Rare). Revenue-weighted NRR: 94.2% (churned customers are predominantly low-value rare riders contributing only 5.8% of total platform revenue). Churn model caveat: bracketed satisfaction-to-churn mapping uses industry benchmarks, NOT validated in this dataset. Segment-based churn model is MECHANICAL (churn rate = segment by construction). Neither model validates satisfaction→churn causation. Confidence: MEDIUM-LOW."
+  Font: Regular, 10pt, charcoal.
+  Border: 1pt solid electric yellow. Padding: 0.12 inch.
+
+BOX 4 — "Negative Margin Analysis":
+  Text: "39.6% of all trips have negative contribution margin. 99% of <3km trips at 1.0x surge have negative CM. These are NOT loss-leaders (correlation with future ride frequency: r=-0.324, p<0.001 — actually NEGATIVELY associated with repeat usage). 62.8% of total CM comes from surge trips (31.2% of volume). Cross-subsidy: positive-CM trips subsidize 16.7% of their value to cover negative-CM trips. Minimum fare of Rs.125 per zone would eliminate the majority of negative margins. 7.4% of trips at surge>1.0x still have negative CM (short-distance, <3km). Insight: fixing the floor (minimum fare) is complementary to capping the ceiling (surge limits) — both are needed for sustainable unit economics."
+  Font: Regular, 10pt, charcoal.
+  Border: 1pt solid electric yellow. Padding: 0.12 inch.
+
+================================================================
+SLIDE 4 — STRATEGIC OPTIONS COMPARISON
+================================================================
+
+LAYOUT: Options comparison table dominates left 55%. Right side: scenario CM impact chart + radar scoring chart. Data/infographic pattern.
+
+--- TOP ---
+SLIDE TITLE: "Strategic Options Comparison" — Bold, 44pt, jet black
+SUBTITLE: "Evaluating 3 given options + Combined enhancement | Trip-Level Simulation (97% baseline)" — Italic, 14pt, gray
+SLIDE NUMBER: "4/8"
+
+--- LEFT 55% ---
+OPTIONS TABLE (full table with all 5 scenarios):
+| Option | Surge Caps | CM Impact | Revenue Impact | Churn Δ | Trips Capped | Score |
+| Status Quo | 2.5x all zones | 0.00% | 0.00% | 0.00pp | 0.0% | — |
+| Option 1: Calibrated | 2.0x uniform | -5.36% | -1.84% | +0.53pp | 10.4% | 2.74 |
+| Option 2: Zone Gov (Recommended) | Res 1.75x / Com 2.0x / Transit 2.5x | -5.64% | -1.50% | +0.64pp | 10.7% | 4.48 |
+| Option 3a: Loyalty Hard | 1.5x for Gold/Silver | -5.11% | -1.42% | +0.46pp | 6.2% | 3.03 |
+| Option 3b: Loyalty Soft | 1.75x for Gold/Silver | -2.42% | -0.48% | +0.25pp | 4.7% | 3.61 |
+| Combined: Zone + Loyalty | Zone caps + 1.75x loyalty | -6.49% | -1.59% | +0.74pp | 12.1% | 4.19 |
+
+Font: Regular, 10pt, charcoal. Winner row (Option 2) highlighted with electric yellow background tint and Bold font. Table borders: 1pt electric yellow.
+
+SCORING METHODOLOGY NOTE (below table):
+"Weighted multi-criteria scoring: CM Preservation (15%), Cancellation Improvement (10%), Churn Reduction (15%), Regulatory Compliance (20%), Implementation Ease (15%), Strategic Fit (25%). Status Quo excluded — problem statement evaluates 3 given options. Zone Governance wins under 6/6 permuted weight sensitivity scenarios."
+Font: Italic, 9pt, gray
+
+--- RIGHT 45% ---
+IMAGE: charts/scenario_cm_impact.png
+Display: 5 inches wide x 2.5 inches tall
+Frame: Geometric mask, electric yellow border
+
+IMAGE: charts/options_radar.png
+Display: 4.5 inches wide x 3 inches tall
+Frame: Sticker-style, slight rotation 2deg
+
+--- BOTTOM ---
+KEY CAVEAT BOX (muted red border):
+"All simulation results are PROJECTION-BASED under modeled assumptions. Churn improvement magnitude is uncertain (0.15-0.64pp range, depending on model). Scenario CM impacts reflect CONSERVATIVE cost assumption (fixed cost-per-trip does not scale down with surge reduction — actual CM loss likely 10-15% lower if driver payout scales proportionally). Recommendation rests on STRUCTURAL thesis (CM diversification + regulatory positioning + competitive defensibility), NOT churn improvement alone."
+Font: Regular, 10pt, charcoal. "STRUCTURAL thesis" highlighted electric yellow.
+
+================================================================
+SLIDE 5 — RECOMMENDATION: ZONE GOVERNANCE
+================================================================
+
+LAYOUT: The HERO recommendation slide. Left 50%: recommendation thesis with massive headline. Right 50%: scenario comparison chart + weight sensitivity. Bottom: 3 supporting arguments as sticker boxes.
+
+--- TOP ---
+SLIDE TITLE: "Recommendation" — Bold, 44pt, jet black
+SUBTITLE: "Option 2: Zone-Governed Surge Pricing — Score 4.48 / 5" — Bold, 16pt, electric yellow (#FFCC00)
+SLIDE NUMBER: "5/8"
+
+--- LEFT HALF (50%) ---
+RECOMMENDATION THESIS (large, prominent):
+"Zone-Governed Surge Pricing"
+Font: Ultra-bold, 42pt, jet black
+
+CAP STRUCTURE:
+  "Residential Zones: 1.75x cap (highest substitute availability, most price-sensitive)"
+  "Commercial Zones: 2.0x cap (time pressure > price, moderate sensitivity)"
+  "Transit Hubs: 2.5x cap (last-mile necessity, lowest sensitivity)"
+Font: Regular, 13pt, charcoal. Zone names in Bold, surge values in Bold electric yellow.
+
+WHY THIS WINS:
+Text: "Zone Governance scores 4.48/5 by addressing the structural weaknesses of surge pricing without relying on unvalidated churn projections. The thesis has three pillars: (1) CM Diversification — reduce dependence on surge CM from 62.8% to <55% of total CM over 18 months. (2) Regulatory Positioning — self-regulation via sophisticated zone-based caps positions the platform as a responsible market leader, preempting government-mandated uniform caps that would be far more damaging. (3) Competitive Defensibility — per-zone caps are invisible until ride request, making them impossible for competitors to match or reverse-engineer. Uniform caps are immediately observable and matchable within hours."
+Font: Regular, 11pt, charcoal. Line spacing: 1.4.
+
+HIGHLIGHTS:
+"62.8% to <55%" — Bold, electric yellow
+"score 4.48/5" — Bold, electric yellow
+"invisible until ride request" — Bold, electric yellow
+
+STATUS QUO RISK ADDENDUM:
+"The Status Quo (no caps) generates zero short-term CM loss but carries escalating structural risk: (a) 14%+ annual churn from satisfaction erosion, (b) regulatory vulnerability (government may mandate uniform caps), (c) competitor zero-surge positioning targeting dissatisfied riders. Zone Governance converts these tail risks into managed trade-offs with measurable, bounded CM impact (-5.64%)."
+Font: Italic, 10pt, charcoal. Border: 1pt dashed alert red.
+
+--- RIGHT HALF (45%) ---
+IMAGE: charts/ws4_scenario_comparison.png
+Display: 5 inches wide x 2.5 inches tall
+Frame: Geometric mask, electric yellow border
+
+IMAGE: charts/weight_sensitivity_heatmap.png
+Display: 5 inches wide x 2 inches tall
+Frame: Sticker-style with slight rotation
+Caption: "Zone Governance wins under ALL 6 permuted weight scenarios — the recommendation is ROBUST to scoring assumptions."
+
+--- BOTTOM (three argument boxes, full width, horizontal row) ---
+ARGUMENT 1 — "Structural, Not Churn-Dependent":
+  Text: "The recommendation does NOT require churn improvement to be valid. At the segment lower bound (0.15pp churn improvement), LTV/CAC remains ~1.49x — essentially unchanged from 1.47x. The thesis works even if churn-improvement projections prove optimistic. CM diversification from 62.8% surge dependency to <55% provides standalone structural improvement regardless of churn model."
+  Font: Regular, 10pt, charcoal. "NOT require churn improvement" Bold, alert red.
+
+ARGUMENT 2 — "Conservatively Modeled":
+  Text: "All CM impacts use FIXED cost-per-trip assumption (worst case — actual costs would partially scale down with surge). Completion rate improvement from fewer cancellations is modeled (+0.6pp at 1.75x cap). Elasticity uses validated 0.22 (inelastic) — demand won't collapse under price caps. The -5.64% CM estimate is the upper bound of plausible impact; actual likely lower."
+
+ARGUMENT 3 — "Path to Combined Enhancement":
+  Text: "Phase 3 (Month 5-6) adds Loyalty Protection (1.75x cap for Gold/Silver) as an enhancement on top of zone governance. This combined approach (score 4.19) adds +0.10pp churn improvement for frequent riders at modest additional CM cost. Path-to-Silver program converts 37.1% Unknown tier to protected status over 12 months, expanding coverage from 4.7% to 15.5% of trips."
+
+Each box: Border 1pt electric yellow, padding 0.12 inch, width 3.2 inches.
+
+================================================================
+SLIDE 6 — INVESTOR NARRATIVE (18-Month Horizon)
+================================================================
+
+LAYOUT: Three-panel investor metrics display. Left: LTV/CAC trajectory. Center: CM sustainability shift. Right: NRR trajectory. Bottom: caveats and confidence levels.
+
+--- TOP ---
+SLIDE TITLE: "Investor Narrative" — Bold, 44pt, jet black
+SUBTITLE: "3 Metrics, 18-Month Trajectory, Series D Readiness" — Italic, 14pt, gray
+SLIDE NUMBER: "6/8"
+
+--- MAIN CHART (spans full width, top 50%) ---
+IMAGE: charts/investor_narrative.png
+Display: 11 inches wide x 3.5 inches tall
+Frame: Geometric mask, electric yellow border
+Position: Centered, 0.3 inch below subtitle
+
+--- BELOW CHART (three metric columns, equal width) ---
+COLUMN 1 — "LTV/CAC Ratio (Frequent Segment)":
+  METRIC HEADER: "1.47x → 1.47-1.84x"
+  Font: Bold, 22pt, electric yellow
+
+  CURRENT: "1.47x (above breakeven; DCF, 18-month, 10% discount)"
+  TARGET: "1.47-1.84x range (wide due to churn model uncertainty: 0.15-0.64pp improvement)"
+  DRIVER: "Churn reduction from zone governance; satisfaction improvement of +0.064 points average across all trips"
+  CONFIDENCE: "MEDIUM (directional improvement likely; magnitude uncertain)"
+  CAVEAT: "At segment lower bound (0.15pp), LTV/CAC = 1.49x — essentially unchanged. Improvement relies on industry benchmark churn model which is NOT validated in this dataset. Present as RANGE, not single point target."
+
+COLUMN 2 — "CM Sustainability":
+  METRIC HEADER: "62.8% → <55%"
+  Font: Bold, 22pt, electric yellow
+
+  CURRENT: "62.8% of CM from surge trips (31.2% of volume). 39.6% of trips negative CM."
+  TARGET: "<55% surge dependency. <35% negative margin trips."
+  DRIVER: "Zone caps shift CM composition from surge-dependent to volume-driven. Minimum fare (Rs.125) eliminates negative margins at surge."
+  CONFIDENCE: "MEDIUM-HIGH (depends on 97% baseline assumption; structurally robust across sensitivity range)"
+  CAVEAT: "Elasticity at 97% baseline = 0.22; at 100% artifact = 0.33. Even at worst case, demand loss from caps is bounded (inelastic demand)."
+
+COLUMN 3 — "Net Revenue Retention (NRR)":
+  METRIC HEADER: "94.2% → ≥95%"
+  Font: Bold, 22pt, electric yellow
+
+  CURRENT: "94.2% (revenue-weighted; churned customers are low-value rare segment contributing only 5.8% of revenue)"
+  TARGET: "≥95% (from reduced residential zone churn)"
+  DRIVER: "Zone governance improves residential satisfaction by +0.064; Gold/Silver loyalty protection adds further retention for high-value riders"
+  CONFIDENCE: "MEDIUM-HIGH (revenue NRR already strong; churn improvement provides marginal gain)"
+  CAVEAT: "Customer retention rate is only 85.4% — but churned customers have negligible revenue impact (avg monthly revenue Rs. 400 vs Rs. 2,600 for retained). Revenue NRR is the correct investor metric."
+
+--- BOTTOM ---
+OVERALL CONFIDENCE STATEMENT (electric yellow background box, full width):
+"The 18-month trajectory is DIRECTIONALLY SOUND but MAGNITUDE UNCERTAIN. The structural thesis (CM diversification + regulatory positioning + competitive defensibility) does NOT depend on churn model validation. The churn model uses industry benchmarks that are NOT validated in this dataset (behavioral correlations ~0.0). Present all churn-dependent metrics as RANGES, not point estimates."
+Font: Bold, 11pt, charcoal.
+
+================================================================
+SLIDE 7 — IMPLEMENTATION ROADMAP
+================================================================
+
+LAYOUT: Left 55%: 5-phase timeline with metrics. Right 45%: risk matrix + chart. Process/flow pattern.
+
+--- TOP ---
+SLIDE TITLE: "Implementation Roadmap" — Bold, 44pt, jet black
+SUBTITLE: "5-Phase, 18-Month Rollout | 1 Critical Risk" — Italic, 14pt, gray
+SLIDE NUMBER: "7/8"
+
+--- LEFT 55% ---
+5-PHASE TIMELINE (horizontal flow):
+
+PHASE 1 "Foundation" (M1-2):
+  Actions: Deploy zone-type classification engine. Shadow mode testing at 1.75x residential. A/B test on 5% traffic.
+  Success Metric: Zone classification accuracy >95%. Shadow mode discrepancy <2%.
+  Status: Pre-launch.
+
+PHASE 2 "Zone Caps Go Live" (M3-4):
+  Actions: Residential 1.75x, Commercial 2.0x, Transit Hub 2.5x. Driver earnings guarantee for residential zones (6-month floor).
+  Success Metric: Residential satisfaction +0.05, completion +1.5pp. Driver churn <3% in residential.
+  Status: Launch.
+
+PHASE 3 "Loyalty Protection" (M5-6):
+  Actions: Gold/Silver 1.75x cap enhancement. Path-to-Silver program for Unknown/Bronze riders (gamification of tier progression). Target: 15%+ enrollment.
+  Success Metric: Gold/Silver retention +2pp. Program enrollment >15% of Unknown tier.
+  Status: Enhancement.
+
+PHASE 4 "Optimization" (M7-12):
+  Actions: Fine-tune caps from 6-month A/B test data. Dynamic adjustment for events/seasons. Zone reclassification based on demand pattern shifts. Weather/event-based surge floor adjustments.
+  Success Metric: Net CM improvement >2%. LTV/CAC Occasional >1.0x. NRR maintained above 94%.
+  Status: Iteration.
+
+PHASE 5 "Scale & Series D" (M13-18):
+  Actions: Full zone+loyalty operational across all 3 cities. Series D readiness metrics package. Competitive monitoring dashboard with real-time zone defensibility scoring.
+  Success Metric: LTV/CAC Frequent ≥1.47x (floor). NRR ≥95%. Surge CM dependency <55%.
+  Status: Scale.
+
+Each phase: Phase name in Bold electric yellow, 14pt. Body text Regular, 10pt, charcoal. Connected by dotted arrows in jet black.
+
+--- RIGHT 45% ---
+IMAGE: charts/implementation_risk.png
+Display: 5 inches wide x 3 inches tall
+Frame: Geometric mask, electric yellow border
+
+RISK REGISTRY TABLE (below image):
+| Severity | Risk | Mitigation |
+| CRITICAL | Driver earnings reduction in capped zones | Earnings guarantee for 6 months; 1.25x surge floor for drivers in residential zones |
+| HIGH | Competitor price matching | Zone caps invisible pre-request; reliability differentiation; driver loyalty programs |
+| HIGH | Unknown tier alienation (37.1% of customers) | Path-to-Silver gamification; progressive tier benefits; no customer left behind |
+| MEDIUM | Regulatory intervention mandating uniform caps | Proactive self-regulation narrative; zone-based = more sophisticated than uniform caps |
+| MEDIUM | Elasticity estimates wrong (0.22 vs reality) | Conservative cost assumption; bounded sensitivity range; A/B testing provides validation |
+
+Font: Regular, 9pt, charcoal. Table borders: 1pt electric yellow. CRITICAL/HIGH rows: alert red (#FF3333) severity text.
+
+--- BOTTOM ---
+BUDGET NOTE (small, italic, gray):
+"Implementation budget estimate: Rs.8-12 Cr over 18 months (5-8% of projected annual CM). Primary costs: driver earnings guarantee (M3-12, ~Rs.5Cr), engineering (zone classification + A/B infrastructure, ~Rs.3Cr), loyalty program operations (~Rs.2Cr). Break-even expected by Month 8 based on CM stabilization from reduced cancellations and improved completion rates."
+Font: Italic, 9pt, gray.
+
+================================================================
+SLIDE 8 — APPENDIX
+================================================================
+
+LAYOUT: Ultra-dense. Two columns. Left: methodology details + data caveats. Right: supporting charts + sensitivity analysis. White with grid.
+
+--- TOP ---
+SLIDE TITLE: "Appendix" — Bold, 44pt, jet black
+SUBTITLE: "Methodology, Caveats, and Sensitivity Analysis" — Italic, 14pt, gray
+SLIDE NUMBER: "8/8"
+
+--- LEFT COLUMN (50%) ---
+SECTION A: "Methodology Summary"
+Text: "WS1 (Demand Suppression): Group-by analysis of cancellation, completion, satisfaction across surge bands, zone types, cities, and time windows (peak/off-peak, weekday/weekend). Negative margin heatmap across distance buckets × surge bands. Loss-leader hypothesis tested via correlation of negative CM with future ride frequency (r=-0.324, p<0.001 — rejected). Revenue concentration: 62.8% of CM from 31.2% surge trips.
+
+WS2 (Price Elasticity): Arc elasticity = Δlog(completed_demand) / Δlog(fare_per_km) between adjacent surge bands. Completion baseline adjusted from 100% (data artifact at 1.0x) to 97% for all analysis. Validated value (0.22) from controlled regression with time-of-day, zone, and weather fixed effects. Weather confounding tested and found NEGLIGIBLE (precip-surge r=-0.004). Non-monotonic completion at 1.75x (61.8% of subgroups) documented as data artifact.
+
+WS3 (Unit Economics): DCF LTV with 18-month horizon, 10% annual discount rate. Churn model: bracketed satisfaction-to-annual-churn mapping from industry benchmarks. Breakeven churn computed via binary search (50 iterations, monthly churn where DCF LTV = CAC). NRR computed as revenue-weighted (retained customer revenue / total customer revenue).
+
+WS4 (Scenario Simulation): Trip-level methodology. For each capped trip: new fare = fare × (capped_surge / actual_surge). New CM = new_revenue - cost_per_trip (conservative: fixed cost). New completion from adjusted completion curve at capped surge. Satisfaction from interpolation at capped surge. Demand elasticity effect: demand_increase = |elasticity| × price_reduction%. Churn improvement: customer-level new satisfaction → new annual churn → new LTV. Status Quo (S0) returns 0.00% by definition."
+Font: Regular, 9pt, charcoal. Key terms in Bold.
+
+SECTION B: "Data Quality Caveats" — Bold, 12pt, alert red
+Text: "1. Completion at 1.0x surge = 100% — impossible in real ride-hailing. Adjusted to 97% baseline for all analysis.
+2. Non-monotonic completion at 1.75x (0.913 > 0.904 at 1.5x) — widespread data artifact (61.8% of subgroups). Interpolation used in simulation.
+3. 37.1% of loyalty_tier is NULL (imputed as 'Unknown'). Option 3 only protects Gold+Silver (30.1% of trips). Unknown tier lacks any protection.
+4. Churn model (satisfaction→annual_churn) is NOT validated in this dataset. Behavioral proxy correlations: days_since r=-0.045, risk_flag r=-0.025, ride_freq r=0.024. All essentially zero. Churn improvement magnitude is UNCERTAIN.
+5. No causal claims — all simulation results are projection-based under modeled assumptions. No A/B experiment was conducted."
+Font: Regular, 9pt, charcoal.
+
+--- RIGHT COLUMN (45%) ---
+IMAGE: charts/ws1_margin_satisfaction_tradeoff.png
+Display: 5 inches wide x 2 inches tall
+Frame: Sticker-style, slight rotation
+Caption: "Margin vs Satisfaction trade-off by surge band"
+
+IMAGE: charts/option3_coverage_sensitivity.png
+Display: 5 inches wide x 2 inches tall
+Frame: Sticker-style, slight rotation
+Caption: "Option 3 coverage sensitivity: Gold/Silver only (4.7%) vs All tiers including Unknown (15.5%)"
+
+SECTION C: "Weight Sensitivity" — Bold, 12pt, electric yellow
+Text: "Zone Governance wins under ALL 6 permuted weight scenarios tested. Weight configurations: Base (CM=15%, Cancel=10%, Churn=15%, Reg=20%, Impl=15%, Strat=25%), CM-Heavy (25/10/10/20/15/20), Churn-Heavy (10/10/25/20/15/20), Reg-Heavy (10/10/10/35/15/20), Strat-Heavy (10/10/10/15/15/40), Equal (16.7/16.7/16.7/16.7/16.7/16.7). Zone Gov scores range: 4.38 (Reg-Heavy) to 4.60 (Strat-Heavy). Combined scores range: 4.14 (Equal) to 4.50 (Strat-Heavy) but never exceeds Zone Gov. Recommendation is ROBUST to scoring weight assumptions."
+Font: Regular, 9pt, charcoal.
+
+--- BOTTOM STRIP ---
+"Dynamic Pricing Strategy in Ride-Hailing | Slide Deck Version 1.0 | github.com/ashishexee/ride-hailing-pricing-strategy"
+Font: Regular, 9pt, gray, centered.
+
+================================================================
+CHART FILENAME REFERENCE (USE EXACTLY):
+================================================================
+- charts/satisfaction_vs_surge.png — Satisfaction curve by surge multiplier (Slide 1, 3)
+- charts/completion_cancel_by_surge.png — Completion + cancellation bars (Slide 3)
+- charts/ltv_cac_by_segment.png — LTV/CAC by segment bars (Slide 3)  
+- charts/cm_decomposition.png — CM source pie charts (Slide 1 background)
+- charts/negative_margin_heatmap.png — Negative CM heatmap (Slide 3)
+- charts/porters_five_forces.png — Porter's Five Forces visual (Slide 2)
+- charts/porters_defensibility.png — Pricing defensibility matrix (Slide 2)
+- charts/scenario_cm_impact.png — CM impact bar comparison (Slide 4)
+- charts/options_radar.png — Radar chart of scoring dimensions (Slide 4)
+- charts/ws4_scenario_comparison.png — Scenario comparison (Slide 5)
+- charts/weight_sensitivity_heatmap.png — Weight sensitivity (Slide 5)
+- charts/investor_narrative.png — 3-panel investor metrics (Slide 6)
+- charts/implementation_risk.png — Implementation timeline + risk matrix (Slide 7)
+- charts/ws1_margin_satisfaction_tradeoff.png — Margin vs satisfaction (Slide 8)
+- charts/option3_coverage_sensitivity.png — Option 3 coverage (Slide 8)
+- charts/elasticity_sensitivity_baseline.png — Elasticity sensitivity (Slide 8, optional)
+
+================================================================
+END OF COMPLETE 8-SLIDE CONTENT
+================================================================
