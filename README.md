@@ -2,7 +2,7 @@
 
 A case study analyzing surge pricing impact on customer retention, unit economics, and long-term enterprise value for a ride-hailing platform across Mumbai, Bangalore, and Delhi.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L_27PUsoQKoB4WTpwMwXrz3kK6_tSEf1?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L_27PUsoQKoB4WTpwMwXrz3kK6_tSEf1?usp=sharing) &nbsp; [![View Slide Deck](https://img.shields.io/badge/View-Slide_Deck-FFCC00?style=flat&logo=canva)](https://canva.link/hg0fx9pyiu66mfy)
 
 ## Recommendation
 **Zone-Governed Surge Pricing** — Residential 1.75x / Commercial 2.0x / Transit Hub 2.5x caps. Score: 4.48 / 5.
@@ -14,7 +14,7 @@ A case study analyzing surge pricing impact on customer retention, unit economic
 ├── notebooks/             # Self-contained analysis notebook (Colab compatible)
 ├── outputs/               # Excel deliverables + analysis CSVs
 ├── charts/                # 48 chart visualizations
-├── deck/                  # Strategy deck (PDFs + spec files)
+├── deck/                  # Strategy deck → [View on Canva](https://canva.link/hg0fx9pyiu66mfy)
 └── docs/                  # Problem statement and methodology
 ```
 
@@ -78,6 +78,9 @@ Zone Governance dominates across Regulatory Compliance, Strategic Fit, and Imple
 
 ### Google Colab (one click)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L_27PUsoQKoB4WTpwMwXrz3kK6_tSEf1?usp=sharing)
+
+### Slide Deck
+[![View Slide Deck](https://img.shields.io/badge/View_on-Canva-FFCC00?style=flat&logo=canva)](https://canva.link/hg0fx9pyiu66mfy)
 
 The notebook auto-downloads `cleaned_data.csv` from the GitHub release. Zero setup required.
 
