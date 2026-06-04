@@ -1,5 +1,0 @@
-scenario,description,pct_trips_protected,n_customers_improved,pct_customers_improved,cm_change_pct,rev_change_pct,avg_churn_delta_pp,annual_cm_delta,total_ltv_gain,net_annual_value,baseline
-S3b_Loyalty_Soft,Original: Only Gold/Silver at 1.75x cap,4.7,782,26.1,-2.55,-0.58,0.25,-208564,861,-207704,97% (adjusted)
-S3c_Extended_Bronze_Soft,Extended: Gold/Silver/Bronze at 1.75x cap (Unknown excluded),9.8,1607,53.6,-5.47,-1.28,0.6,-446825,1961,-444864,97% (adjusted)
-S3d_Unknown_As_Bronze_NoProtect,Unknown=Bronze but no protection (gap remains),4.7,782,26.1,-2.55,-0.58,0.25,-208564,861,-207704,97% (adjusted)
-S3e_Unknown_Included_Soft,Full: All tiers including Unknown at 1.75x cap,15.5,2544,84.8,-9.0,-2.17,0.97,-734683,3253,-731431,97% (adjusted)

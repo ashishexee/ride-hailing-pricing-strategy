@@ -1,4 +1,0 @@
-zone_type,avg_neg_cost,avg_neg_take_rate,min_fare_avg_neg,p95_all_cost,p95_all_take_rate,min_fare_p95_all,n_neg_trips_zone,pct_neg_zone
-residential,23.57,0.1891,124.64,27.51,0.1901,144.69,9833,41.2
-commercial,23.6,0.1893,124.69,27.49,0.1903,144.48,7378,38.1
-transit_hub,23.69,0.1892,125.19,27.47,0.1901,144.5,2578,38.1

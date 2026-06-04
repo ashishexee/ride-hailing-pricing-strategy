@@ -1,7 +1,0 @@
-loyalty_cap,loyalty_tiers,label,pct_trips_protected,n_customers_improved,pct_customers_improved,cm_change_pct,rev_change_pct,avg_churn_delta_pp,annual_cm_delta,total_ltv_gain,net_annual_value,baseline
-1.5,Gold_Silver,"Zone+Loyalty cap=1.5x, tiers=Gold_Silver",13.6,575,19.2,-11.53,-4.68,0.95,-855235,7169,-850456,97% (adjusted)
-1.5,Gold_Silver_Bronze,"Zone+Loyalty cap=1.5x, tiers=Gold_Silver_Bronze",17.0,716,23.9,-16.03,-5.99,1.2,-1189736,8719,-1183924,97% (adjusted)
-1.75,Gold_Silver,"Zone+Loyalty cap=1.75x, tiers=Gold_Silver",12.1,433,14.4,-8.67,-3.73,0.74,-642973,5583,-639251,97% (adjusted)
-1.75,Gold_Silver_Bronze,"Zone+Loyalty cap=1.75x, tiers=Gold_Silver_Bronze",13.7,488,16.3,-9.78,-3.89,0.84,-725487,6205,-721350,97% (adjusted)
-2.0,Gold_Silver,"Zone+Loyalty cap=2.0x, tiers=Gold_Silver",11.2,378,12.6,-8.08,-3.75,0.66,-599836,4832,-596615,97% (adjusted)
-2.0,Gold_Silver_Bronze,"Zone+Loyalty cap=2.0x, tiers=Gold_Silver_Bronze",11.8,390,13.0,-8.47,-3.89,0.68,-628350,4982,-625029,97% (adjusted)

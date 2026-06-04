@@ -1,3 +1,0 @@
-scenario,description,pct_trips_protected,n_customers_improved,pct_customers_improved,cm_change_pct,rev_change_pct,avg_churn_delta_pp,annual_cm_delta,total_ltv_gain,net_annual_value,baseline
-S4_Combined_ZoneLoyalty,Combined: Zone caps + Hard loyalty for Gold/Silver,13.6,575,19.2,-11.53,-4.68,0.95,-855235,7169,-850456,97% (adjusted)
-S4b_Combined_Soft,Combined: Zone caps + Soft loyalty for Gold/Silver,12.1,433,14.4,-6.92,-1.9,0.74,-564875,2534,-562340,97% (adjusted)

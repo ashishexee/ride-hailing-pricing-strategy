@@ -1,5 +1,0 @@
-churn_model,avg_churn_delta_pp,total_ltv_gain,n_customers_improved,model_changes_with_satisfaction
-Bracketed (Satisfaction),0.637,4647,367,True
-Segment-Based,0.147,-6023,329,PARTIAL - mechanical correlation only
-Ride-Frequency,0.0,0,0,False
-Combined (40/30/30),1.735,-1512,1159,True

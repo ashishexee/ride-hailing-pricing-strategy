@@ -1,7 +1,0 @@
-Risk_ID,Risk,Category,Probability,Impact,Severity,Mitigation,Owner,Status
-R1,Driver earnings reduction in capped zones,Operational,MEDIUM-HIGH,HIGH,CRITICAL,Driver earnings guarantee; cross-subsidy from uncapped zones; performance bonus,Operations Lead,Planned
-R2,Competitor price matching in capped zones,Competitive,HIGH,MEDIUM,HIGH,Focus on completion/satisfaction differentiation; zone caps less visible; quick cap adjustment capability,Strategy Lead,Planned
-R3,Unknown tier customer alienation,Customer,HIGH,MEDIUM,HIGH,"""Path to Silver"" program; trial protection period; clear communication of benefits structure",Product Lead,Planned
-R4,Zone classification errors,Technical,MEDIUM,LOW-MEDIUM,MEDIUM,Manual validation; shadow mode testing; quick rollback,Tech Lead,Planned
-R5,Regulatory intervention on surge pricing,Regulatory,LOW-MEDIUM,HIGH,HIGH,Proactive self-regulation narrative; compliance documentation; regulatory affairs team,Legal/Regulatory,Monitoring
-R6,Elasticity estimates wrong (baseline completion artifact),Analytical,MEDIUM,MEDIUM,MEDIUM,Conservative elasticity assumptions (baseline 97%); A/B test to validate; adjust projections after Phase 1 data,Analytics Lead,Active

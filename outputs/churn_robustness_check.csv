@@ -1,5 +1,0 @@
-model,rho_behavioral_proxy,p_behavioral_proxy,direction_correct_bp,rho_days_since,p_days_since,direction_correct_ds,rho_ride_freq,p_ride_freq,direction_correct_rf,n_directions_correct,avg_abs_corr,caveat
-Bracketed (Satisfaction),-0.0253,0.166103,False,-0.0447,0.014383,False,0.0237,0.195268,False,0,0.0312,0/3 correct; relies on industry benchmarks
-Segment-Based,0.6552,0.0,True,0.3133,0.0,True,-0.775,0.0,True,3,0.5812,MECHANICAL: segment=churn rate by construction
-Ride-Frequency,0.4725,0.0,True,0.5101,0.0,True,-0.9674,0.0,True,3,0.65,MECHANICAL: frequency=churn proxy
-Combined (40/30/30),0.4995,0.0,True,0.4916,0.0,True,-0.9445,0.0,True,3,0.6452,MECHANICAL: inherits segment+frequency artifacts
