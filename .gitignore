@@ -20,3 +20,6 @@ Thumbs.db
 *.bak
 ~$*
 notebooks/charts/
+
+# Submission folder (local only, not pushed)
+submission/
